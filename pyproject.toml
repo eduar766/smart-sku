@@ -1,0 +1,13 @@
+[project]
+name = "smart-sku"
+version = "0.1.0"
+description = "Plataforma para la generación automática de contenido SEO de productos"
+dependencies = [
+    "django>=4.2",
+    "djangorestframework",
+    "psycopg[binary]",  # Para conectarse a PostgreSQL (Supabase usa PostgreSQL)
+    "python-dotenv",     # Para variables de entorno
+]
+
+[tool.uv]
+virtualenvs.in-project = true
